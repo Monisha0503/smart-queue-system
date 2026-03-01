@@ -1,0 +1,204 @@
+/* General body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Nav Bar */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar button {
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-bar button.active,
+.nav-bar button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ff6b6b, 0 0 20px #feca57;
+}
+
+/* App container */
+.app-container {
+  text-align: center;
+}
+
+/* Login Page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../assets/background.jpg') no-repeat center center;
+  background-size: cover;
+  animation: bgAnimate 20s linear infinite alternate;
+}
+
+@keyframes bgAnimate {
+  0% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(90deg); }
+  100% { filter: hue-rotate(180deg); }
+}
+
+.login-box {
+  background: rgba(0,0,0,0.7);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.login-box:hover {
+  transform: scale(1.05);
+}
+
+.login-box input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.login-box button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff6b6b, 0 0 20px #feca57;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 30px;
+}
+
+.dashboard h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard li {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.dashboard li:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.02);
+}
+
+/* Queue Page */
+.queue-page {
+  padding: 30px;
+}
+
+.queue-page h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.queue-input {
+  margin-bottom: 20px;
+}
+
+.queue-input input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.queue-input button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(45deg, #1dd1a1, #00d2d3);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.queue-input button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #1dd1a1, 0 0 20px #00d2d3;
+}
+
+.queue-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.queue-page li {
+  margin: 8px 0;
+  padding: 10px 15px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.queue-page li:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.02);
+}
+
+.queue-page li button {
+  background: #ff6b6b;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.queue-page li button:hover {
+  background: #ff4757;
+  transform: scale(1.1);
+}
